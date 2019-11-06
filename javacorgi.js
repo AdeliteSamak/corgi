@@ -21,10 +21,12 @@ nine_square.addEventListener("click", startSquare);
 let ten_fade = document.querySelector("#ten");
 ten_fade.addEventListener("click", startFade);
 
-
+const radio = new Audio('./mouse_click.mp3');
 listElements.forEach(displayIt);
-function displayIt(Element){
-    Element.addEventListener("click", markIt);
+function displayIt(element){
+    element.addEventListener("click", ()=>{
+        radio.play();
+    });
 }
 
 function markIt(){
