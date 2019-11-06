@@ -1,4 +1,4 @@
-const listElements = document.querySelectorAll("Li");
+const listElements = document.querySelectorAll("li");
 let main_image = document.querySelector("#image");
 let one_rotatesc = document.querySelector("#one");
 one_rotatesc.addEventListener("click", startRotate);
